@@ -1,15 +1,19 @@
 import React from 'react';
 import styled from "styled-components";
+import {IMenuItems} from "./menuTypes";
 
-export const Menu = () => {
+
+
+
+export const Menu = (props: { menuItems: IMenuItems[] }) => {
     return (
         <StyledMenu>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Works</a></li>
-            <li><a href="">Testimony</a></li>
-            <li><a href="">Contact</a></li>
+            {props.menuItems.map((menuItem)=>{
+              return  <li key ={menuItem.id}>
+                <a href="" >{menuItem.item}</a>
+                 </li>
+                })}
         </ul>
         </StyledMenu>
     );
