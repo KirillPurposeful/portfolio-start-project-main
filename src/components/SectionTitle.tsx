@@ -21,7 +21,7 @@ export const SectionTitle = styled.h2`
     position: absolute;
     left: 50%;
     bottom: -30px;
-    trasform : translateX(-50%);
+    transform : translateX(-50%);
     
   }
 `
