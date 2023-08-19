@@ -10,8 +10,8 @@ import {HeaderMenu} from "./headerMenu/HeaderMenu";
 export const Header = () => {
     return (
         <StyledHeader>
-            <Container>
-                <FlexWrapper justify={"spase-between"} align={"center"}>
+            <Container background={"linear-gradient(0deg, rgb(23, 144, 208), rgb(135, 55, 234), rgb(102, 40, 136))"} borderRadius={"10px"}>
+                <FlexWrapper justify={"center"} align={"center"} >
                     <Logo/>
                     <HeaderMenu menuItems={menuItemsDto}/>
                 </FlexWrapper>
@@ -21,11 +21,11 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  background-color: #1be51b;
   display: flex;
-  background: rgba(0, 0, 220, 0.9);
+  background: linear-gradient(0deg, rgba(14, 86, 124, 0.55), rgba(40, 3, 79, 0.47), rgba(7, 4, 4, 0.45));
+  backdrop-filter: blur(10px);
   padding: 20px 0;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;

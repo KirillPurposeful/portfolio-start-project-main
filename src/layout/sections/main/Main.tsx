@@ -22,12 +22,12 @@ export const Main = () => {
 
 const StyledMain = styled.div`
   min-height: 10vh;
-  background-color: #0b360b;
+  background-color: #1d3d21;
   color: white;
 `
 
 const Photo = styled.img`
-    width: 430px;
-    height: 500px;
-    object-fit: cover;
- `
+  width: 430px;
+  height: 500px;
+  object-fit: cover;
+`
