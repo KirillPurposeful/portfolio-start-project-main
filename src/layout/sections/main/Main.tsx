@@ -91,6 +91,6 @@ const Name = styled.h2`
   }
 `
 const IntroText = styled.span`
-  font-family: 'Poppins';
+  font-family: 'Poppins',sans-serif;
   font-size: 14px;
 `
