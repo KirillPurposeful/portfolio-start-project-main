@@ -9,7 +9,7 @@ import {Container} from "../../../components/Container";
 export const Skills = () => {
     return (
         <StyledSkills>
-            <Container>
+            <Container background={"purple"}>
                 <SectionTitle>My Shrek Skills in Web</SectionTitle>
                 <FlexWrapper wrap={"wrap"} justify={"space-between"}>
 
@@ -28,6 +28,5 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  background-color: chartreuse;
   min-height: 100vh;
 `
